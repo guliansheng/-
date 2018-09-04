@@ -1,0 +1,30 @@
+元数据描述
+
+纽约五个区：
+
+布朗克斯区（The Bronx）、
+布鲁克林区（Brooklyn）、
+曼哈顿（Manhattan）、
+皇后区（Queens）、
+斯塔滕岛（Staten Island）
+
+数据介绍：来自美国纽约的出租车数据，包括空间位置信息，时间信息等属性信息。
+
+数据格式：csv
+
+数据字段描述：
+
+medallion：UUID
+hack_license：UUID
+vendor_id：类型
+rate_code：比率
+store_and_fwd_flag:是否是四驱
+pickup_datatime：客人上车时间
+dropoff_datatime：客人下车时间
+passenger_count：载客数量
+trip_time_in_secs：载客时间
+trip_distance：载客距离
+pickup_longitude：客人上车经度
+pickup_latitude：客人上车维度
+dropoff_longitude：客人下车经度
+dropoff_latitude：客人下车维度

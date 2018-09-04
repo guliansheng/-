@@ -1,0 +1,5 @@
+1、拖本地的trip.txt文件到/home/cloudera
+2、hadoop fs -mkdir /trip_input
+3、hadoop fs -ls /trip_input
+4、hadoop fs -put /home/cloudera/trip.txt /trip_input
+5、hadoop fs -ls /trip_input

@@ -1,0 +1,5 @@
+1、根据vendor_id分组计算
+select vendor_id,sum(passenger_count),sum(trip_time_in_secs),sum(trip_distance),count(*) from trip group by vendor_id;
+2、根据时间分组计算
+select substr(pickup_datatime,1,8),sum(trip.passenger_count) passenger_count,sum(trip.trip_distance) trip_distance,sum(trip.trip_time_in_secs) trip_time_in_sec
+from trip group by substr(pickup_datatime,1,8);

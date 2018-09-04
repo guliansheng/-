@@ -1,0 +1,20 @@
+create external table trip(
+medallion string,
+hack_license string,
+vendor_id string,
+rate_code string,
+store_and_fwd_flag string,
+pickup_datatime string,
+dropoff_datatime string,
+passenger_count bigint,
+trip_time_in_secs bigint,
+trip_distance int,
+pickup_longitude string,
+pickup_latitude string,
+dropoff_longitude string,
+dropoff_latitude string
+)
+ROW FORMAT DELIMITED 
+  FIELDS TERMINATED BY '|' 
+  LINES TERMINATED BY '\n'  
+STORED AS TEXTFILE LOCATION '/trip_input/';
